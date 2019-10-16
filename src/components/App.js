@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
+import Header from './home/Header';
+import Banner from './home/Banner';
+import '../assets/styles/App.scss';
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Banner />
     </div>
   );
 }

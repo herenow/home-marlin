@@ -1,0 +1,88 @@
+.banner {
+  margin-top: 20px;
+  width: 100%;
+
+  &__intro {
+    background: url("../../images/banner_background.png") no-repeat;
+    background-size: cover;
+    height: 651px;
+    width: 100%;
+
+    &__title {
+      width: 75%;
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 130px;
+      color: #fff;
+
+      h1 {
+        width: 38%;
+        max-width: 600px;
+        font-family: 'Righteous', cursive;
+        font-size: 4em;
+        letter-spacing: 8px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1.5em;
+        width: 45%;
+        max-width: 700px;
+      }
+    }
+  }
+
+  &__divisor {
+    background: url("../../images/banner_divisor.png") right center no-repeat;
+    background-size: 104%;
+    width: 100%;
+    height: 1195px;
+    position: absolute;
+    top: 40px;
+  }
+}
+
+@media(min-width: 1920px) {
+  .banner {
+    &__intro {
+      height: 868px;
+
+      &__title {
+        h1 {
+          width: 60%;
+          font-size: 6em;
+        }
+
+        p {
+          width: 60%;
+          font-size: 2em;
+        }
+      }
+    }
+
+    &__divisor {
+      top: 200px;
+    }
+  }
+}
+
+@media(min-width: 2560px) {
+  .banner {
+    &__intro {
+      height: 1157px;
+
+      &__title {
+        max-width: 1500px;
+        padding-top: 250px;
+
+        p {
+          max-width: 45%;
+        }
+      }
+    }
+
+    &__divisor {
+      top: 430px;
+    }
+  }
+}
