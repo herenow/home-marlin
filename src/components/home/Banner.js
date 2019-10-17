@@ -11,7 +11,6 @@ export default class Banner extends React.Component {
           </div>
         </div>
         <div className="banner__divisor" />
-        <div className="banner__about"></div>
       </div>
     );
   }
