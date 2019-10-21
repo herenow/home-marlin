@@ -5,6 +5,7 @@ import About from './home/About';
 import Slider from './home/Slider';
 import Payment from './home/Payment';
 import Form from './home/Form';
+import Footer from './home/Footer';
 import '../assets/styles/App.scss';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Slider />
       <Payment />
       <Form />
+      <Footer />
     </div>
   );
 }

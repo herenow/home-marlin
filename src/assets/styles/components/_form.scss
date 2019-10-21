@@ -8,6 +8,7 @@
   align-items: center;
   position: relative;
   margin-right: 8%;
+  z-index: 1;
 
   h3 {
     margin-top: 50px;
@@ -52,7 +53,8 @@
   &__bottom {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
 
     button {
       position: relative;
@@ -62,7 +64,6 @@
       border: 3px solid #353387;
       width: 11%;
       height: 40px;
-      margin-right: 17%;
       font-size: 1em;
       color: #fff;
       box-shadow: 3px 4px 0 -2px #e60b6f;
@@ -74,16 +75,6 @@
         box-shadow: none;
         outline: none;
       }
-    }
-
-    &__outlined-box {
-      width: 200px;
-      height: 150px;
-      border: 10px solid #e60b6f;
-      position: relative;
-      left: 20px;
-      top: 20px;
-      z-index: -1;
     }
   }
 
@@ -112,20 +103,8 @@
       button {
         width: 13%;
         height: 45px;
-        margin-right: 9.5%;
         margin-top: 10px;
       }
-
-      &__outlined-box {
-        width: 300px;
-        height: 200px;
-      }
-    }
-  }
-
-  @media(min-width: 2560px) {
-    &__bottom button {
-      margin-right: 18%;
     }
   }
 }

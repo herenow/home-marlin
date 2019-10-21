@@ -13,7 +13,6 @@ export default class Form extends React.Component {
           </form>
           <div className="form__bottom">
             <button>Enviar</button>
-            <div className="form__bottom__outlined-box"/>
           </div>
         </div>
 
