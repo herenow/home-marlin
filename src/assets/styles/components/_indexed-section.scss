@@ -1,7 +1,7 @@
 .indexed-section {
   display: flex;
   justify-content: flex-end;
-  padding-top: 300px;
+  padding-top: 80px;
 
   &--form {
     padding-top: 0 !important;
@@ -15,6 +15,7 @@
     margin-top: 15%;
     position: relative;
     left: 2%;
+    cursor: pointer;
 
     p {
       margin: 0;
@@ -47,8 +48,6 @@
   }
 
   @media(min-width: 1920px) {
-    padding-top: 350px;
-
     &__index {
       margin-top: 10%;
 
@@ -63,7 +62,7 @@
   }
 
   @media(min-width: 2560px) {
-    padding-top: 500px;
+    padding-top: 120px;
 
     &__index {
       span {

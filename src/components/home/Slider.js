@@ -4,7 +4,7 @@ export default class Slider extends React.Component {
   render() {
     return (
       <div className="slider">
-        <div className="slider__header">
+        <div className="slider__header" ref={ this.props.aboutReference }>
           <h2>Missão, visão, valores.</h2>
         </div>
         <div className="slider__carousel">

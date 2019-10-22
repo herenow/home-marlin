@@ -10,7 +10,6 @@ export default class Banner extends React.Component {
             <p>Somos a solução de meios de pagamentos para seu comércio, seja virtual ou físico</p>
           </div>
         </div>
-        <div className="banner__divisor" />
       </div>
     );
   }

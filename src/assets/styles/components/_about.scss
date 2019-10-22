@@ -1,7 +1,6 @@
 .about {
   width: 75%;
   max-width: 1200px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
 
@@ -61,7 +60,7 @@
   &__image {
     width: 40%;
     height: 500px;
-    background: url("../../images/about_us.jpg") center no-repeat;
+    background: url("../../images/about_us.png") center no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.2);
   }

@@ -4,7 +4,7 @@ export default class Payment extends React.Component {
   render() {
     return (
       <div className="payment">
-        <div className="payment-container">
+        <div className="payment-container" ref={ this.props.servicesReference }>
           <div className="payment-container__content">
             <section className="payment-container__content__section">
               <h2>Pagamento online</h2>

@@ -21,13 +21,18 @@ export default class Banner extends React.Component {
                   <br />
                   Conheça nossas soluções, a Marlim.co está aqui para tornar tudo possível.
                 </p>
-                <button>See More →</button>
+                <button onClick={ () => this.props.onAboutClick() }>
+                  See More →
+                </button>
               </div>
             </div>
           </div>
           <div className="about__image" />
         </div>
-        <div className="indexed-section__index">
+        <div
+          className="indexed-section__index"
+          onClick={ () => this.props.onServicesClick() }
+          >
           <p className="indexed-section__index__section">services</p>
           <span />
           <p className="indexed-section__index__number">02</p>
