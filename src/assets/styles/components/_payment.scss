@@ -8,8 +8,8 @@
       background: url('../../images/payment.png') center no-repeat;
       background-size: cover;
       position: relative;
-      width: 35%;
-      height: 250px;
+      width: 39%;
+      height: 320px;
       left: 7%;
       bottom: 200px;
       z-index: 1;
@@ -18,11 +18,25 @@
     &__blue-box {
       position: relative;
       background-color: #353387;
-      width: 30%;
-      height: 200px;
-      right: 42%;
+      width: 31%;
+      height: 270px;
+      right: 39%;
       bottom: 100px;
       z-index: 0;
+    }
+  }
+}
+
+@media(min-width: 1600px) {
+  .payment__decoration {
+    &__image {
+      height: 400px;
+      left: 10%;
+      bottom: 250px;
+    }
+
+    &__blue-box {
+      height: 320px;
     }
   }
 }
@@ -30,15 +44,13 @@
 @media(min-width: 1920px) {
   .payment__decoration {
     &__image {
-      height: 400px;
+      height: 545px;
       left: 10%;
       bottom: 300px;
     }
 
     &__blue-box {
-      height: 350px;
-      right: 35%;
-      bottom: 150px;
+      height: 415px;
     }
   }
 }

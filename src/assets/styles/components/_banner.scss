@@ -1,80 +1,42 @@
+$screen-sizes: (1600px 10px, 1800px 35px, 1920px 45px, 2000px 50px, 2200px 70px);
+
 .banner {
-  margin-top: 20px;
-  width: 100%;
+  background: url("../../images/banner_background.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 430px;
 
   &__intro {
-    background: url("../../images/banner_background.png") no-repeat;
-    background-size: cover;
-    height: 840px;
-    width: 100%;
+    width: 61%;
+    margin: 0 auto;
+    padding-top: 120px;
 
     &__title {
-      width: 75%;
-      max-width: 1200px;
-      margin: auto;
-      padding-top: 130px;
+      margin-left: 8px;
       color: #fff;
 
       h1 {
-        width: 40%;
+        width: 48%;
         font-family: 'Righteous', cursive;
         font-weight: normal;
-        font-size: 5em;
+        font-size: 5.7vw;
         letter-spacing: 2px;
-        margin: 0;
       }
 
       p {
-        font-size: 1.5em;
-        width: 45%;
-        max-width: 700px;
+        margin-top: 44px;
+        font-size: 1.6vw;
+        width: 56.5%;
       }
     }
   }
-}
 
-@media(min-width: 1920px) {
-  .banner {
-    &__intro {
-      height: 1110px;
+  @each $size, $extra-size in $screen-sizes {
 
-      &__title {
-        h1 {
-          width: 50%;
-          font-size: 7em;
-        }
+    @media(min-width: #{$size}) {
+      padding-bottom: calc(430px + (#{$extra-size} * 4));
 
-        p {
-          width: 55%;
-          font-size: 2em;
-        }
-      }
-    }
-
-    &__divisor {
-      top: 200px;
-    }
-  }
-}
-
-@media(min-width: 2560px) {
-  .banner {
-    &__intro {
-      height: 1500px;
-
-      &__title {
-        max-width: 1500px;
-        padding-top: 250px;
-
-        h1 {
-          width: 45%;
-          font-size: 8em;
-        }
-
-        p {
-          width: 45%;
-          font-size: 2em;
-        }
+      &__intro {
+        padding-top: calc(120px + (#{$extra-size} + (#{$extra-size} / 3)));
       }
     }
   }

@@ -5,18 +5,18 @@ export default class Header extends React.Component {
   render () {
     return (
       <header className="header">
-        <div className="header__logo">
-          <img src={logo} alt="marlim logo"/>
-        </div>
-        <div className="header__links">
-          <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Contact us</li>
-          </ul>
+        <div id="js-base-margin" className="header__container">
+          <img className="header__container__logo" src={logo} alt="marlim logo"/>
+          <nav className="header__container__menu">
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About us</li></a>
+              <a href="#"><li>Services</li></a>
+              <a href="#"><li>Portfolio</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Contact us</li></a>
+            </ul>
+          </nav>
         </div>
       </header>
     );

@@ -1,28 +1,26 @@
 .form {
-  width: 55%;
-  color: #fff;
-  background-color: #353387;
+  width: 61%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
-  margin-right: 8%;
   z-index: 1;
 
-  h3 {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-family: 'Righteous', cursive;
-    font-size: 2em;
-    font-weight: 400;
-  }
-
   form {
-    width: 100%;
+    width: 75.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
+    background-color: #353387;
+
+    h3 {
+      margin-top: 60px;
+      margin-bottom: 80px;
+      font-family: 'Righteous', cursive;
+      font-size: 2vw;
+      font-weight: 400;
+    }
 
     input, textarea {
       width: 70%;
@@ -33,7 +31,7 @@
       color: #fff;
       padding-left: 20px;
       font-family: inherit;
-      font-size: 1em;
+      font-size: 1vw;
 
       &::-webkit-input-placeholder {
         color: #fff;
@@ -54,17 +52,19 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 70px;
+    margin-top: 15px;
 
     button {
       position: relative;
       appearance: none;
-      border-radius: 20px;
+      border-radius: 25px;
       background-color: #e60b6f;
       border: 3px solid #353387;
-      width: 11%;
+      width: 13%;
       height: 40px;
-      font-size: 1em;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 1vw;
       color: #fff;
       box-shadow: 3px 4px 0 -2px #e60b6f;
       cursor: pointer;
@@ -79,31 +79,26 @@
   }
 
   @media(min-width: 1920px) {
-    width: 50%;
-    margin-right: 11%;
-
-    h3 {
-      font-size: 3em;
-      margin-top: 90px;
-      margin-bottom: 120px;
-    }
-
     form {
+      h3 {
+        margin-top: 70px;
+        margin-bottom: 120px;
+      }
+
       input {
-        height: 50px;
-        font-size: 1.1em;
+        height: 60px;
       }
 
       textarea {
-        font-size: 1.1em;
+        height: 150px;
       }
     }
 
     &__bottom {
+      margin-bottom: 100px;
+
       button {
-        width: 13%;
-        height: 45px;
-        margin-top: 10px;
+        height: 50px;
       }
     }
   }

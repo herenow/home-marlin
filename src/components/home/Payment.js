@@ -9,13 +9,13 @@ export default class Payment extends React.Component {
             <section className="payment-container__content__section">
               <h2>Pagamento online</h2>
               <p>
-                anti-fraude integrado
+                Anti-fraude integrado
                 <br />
-                checkout transparente
+                Checkout transparente
                 <br />
-                link de Pagamento
+                Link de Pagamento
                 <br />
-                one click buy
+                One click buy
               </p>
             </section>
             <section className="payment-container__content__section">
@@ -32,7 +32,7 @@ export default class Payment extends React.Component {
               <p>
                 EFT (Eletronic fund transfer)
                 <br />
-                Conecção com outra máquina
+                Conexão com outra máquina
                 <br />
                 Sistema de integração
                 <br />

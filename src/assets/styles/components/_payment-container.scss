@@ -1,68 +1,31 @@
 .payment-container {
-  width: 100%;
   background: url('../../images/payment_background.png') center no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
+  background-size: 100% 100%;
+  padding-top: 120px;
+  padding-bottom: 1px;
 
   &__content {
-    width: 75%;
-    max-width: 1200px;
+    width: 61%;
+    margin: auto;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     color: #fff;
 
     &__section {
-      width: 47%;
-
-      &:first-child p {
-        text-transform: uppercase;
-      }
-
-      h2 {
-        font-family: 'Righteous', cursive;
-        font-size: 4em;
-        font-weight: 400;
-      }
-
-      p {
-        font-size: 2em;
-        line-height: 1.4;
-        margin-bottom: 50px;
-      }
-    }
-  }
-}
-
-@media(min-width: 1920px) {
-  .payment-container {
-    padding-top: 50px;
-
-    &__content__section {
-      width: 44%;
-
-      h2 {
-        font-size: 5em;
-      }
-    }
-  }
-}
-
-@media(min-width: 2560px) {
-  .payment-container {
-    padding-top: 100px;
-
-    &__content__section {
       width: 38%;
 
       h2 {
-        font-size: 6em;
+        font-family: 'Righteous', cursive;
+        font-size: 4.3vw;
+        font-weight: 400;
+        margin-bottom: 50px;
       }
 
       p {
-        font-size: 2em;
-        font-weight: bold;
+        font-size: 1.5vw;
+        line-height: 1.8;
+        margin-bottom: 50px;
       }
     }
   }

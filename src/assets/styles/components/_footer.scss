@@ -1,41 +1,62 @@
 .footer {
   width: 90%;
+  display: flex;
+  justify-content: center;
   margin: auto;
   margin-top: 100px;
-  padding-top: 200px;
-  padding-bottom: 50px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
   background-color: #f1f2f4;
   position: relative;
-  bottom: 150px;
+  bottom: 160px;
   z-index: 0;
 
-  &__box__icons {
-    width: 80%;
+  &__limiter {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
-    margin-top: 20px;
-    position: relative;
+    width: 67.7%;
+    padding: 130px 0 47px;
+  }
 
-    i {
-      font-size: 24px;
-      color: lighten(#868593, 20%);
-      cursor: pointer;
+  &__box {
+    flex: 1;
+    width: 25.5%;
+    margin-left: 10px;
 
-      &:hover {
-        color: #3e05c3;
+    &__logo {
+      width: 71%;
+      margin-bottom: 25px;
+    }
+
+    &__icons {
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      i {
+        font-size: 1.7em;
+        color: lighten(#868593, 20%);
+        cursor: pointer;
+
+        &:hover {
+          color: #3e05c3;
+        }
       }
     }
   }
 
   &__links {
+    flex: 1;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
     ul {
       list-style: none;
 
       li {
-        line-height: 1.5;
+        line-height: 1.8;
+        font-size: 1.125em;
 
         a {
           position: relative;
@@ -47,7 +68,14 @@
   }
 
   &__partner {
-    width: 13%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    img {
+      width: 65%;
+    }
   }
 
   &__decoration {
@@ -55,6 +83,10 @@
   }
 
   @media(min-width: 1920px) {
-    margin-top: 70px;
+    bottom: 200px;
+
+    &__limiter {
+      padding: 200px 0 47px;
+    }
   }
 }

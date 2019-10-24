@@ -18,6 +18,21 @@ export default class Home extends React.Component {
     window.scrollTo(0, reference.current.offsetTop);
   }
 
+  setSectionMargin() {
+    const autoMarginElements = document.getElementsByClassName('js-section-margin');
+    const baseElement        = document.getElementById('js-base-margin');
+    const style              = baseElement.currentStyle || window.getComputedStyle(baseElement);
+
+    for (let i = 0; i < autoMarginElements.length; i++) {
+      autoMarginElements[i].style.marginLeft = style.marginLeft;
+    }
+  }
+
+  componentDidMount() {
+    if (typeof window === "undefined") return null;
+    this.setSectionMargin();
+  }
+
   render() {
     return (
       <div className="home">
