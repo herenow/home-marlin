@@ -10,11 +10,11 @@ export default class Footer extends React.Component {
           <div className="footer__box">
             <img className="footer__box__logo" src={logo} alt="marlim logo"/>
             <div className="footer__box__icons">
-              <i class="mdi mdi-facebook" />
-              <i class="mdi mdi-twitter" />
-              <i class="mdi mdi-dribbble" />
-              <i class="mdi mdi-behance" />
-              <i class="mdi mdi-instagram" />
+              <i className="mdi mdi-facebook" />
+              <i className="mdi mdi-twitter" />
+              <i className="mdi mdi-dribbble" />
+              <i className="mdi mdi-behance" />
+              <i className="mdi mdi-instagram" />
             </div>
           </div>
           <div className="footer__links">

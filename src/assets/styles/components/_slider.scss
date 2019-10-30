@@ -7,6 +7,7 @@
     width: 93%;
     margin-left: auto;
     margin-bottom: 163px;
+    overflow: hidden;
   }
 
   &__header {
@@ -22,8 +23,9 @@
 
   &__carousel {
     display: flex;
-    overflow: hidden;
     flex-wrap: nowrap;
+    list-style: none;
+    position: relative;
 
     p, h2 {
       margin: 0;
@@ -98,7 +100,7 @@
       height: 480px;
     }
   }
-  
+
   @media(min-width: 2560px) {
     &__carousel__box__image {
       height: 600px;
