@@ -19,12 +19,12 @@ export default class Footer extends React.Component {
           </div>
           <div className="footer__links">
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Clients</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Termos e condições</a></li>
-              <li><a href="#">Políticas de privacidade</a></li>
+              <li>About</li>
+              <li>Service</li>
+              <li>Clients</li>
+              <li>Contact us</li>
+              <li>Termos e condições</li>
+              <li>Políticas de privacidade</li>
             </ul>
           </div>
           <div className="footer__partner">

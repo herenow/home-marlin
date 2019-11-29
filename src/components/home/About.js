@@ -4,7 +4,7 @@ export default class Banner extends React.Component {
   render () {
     return (
       <section className="indexed-section">
-        <div className="about js-section-margin">
+        <div className="about">
           <div className="about__content">
             <h2 className="about__content__title">Sobre nós</h2>
             <div className="about__content__text">

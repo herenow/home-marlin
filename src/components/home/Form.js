@@ -4,7 +4,7 @@ export default class Form extends React.Component {
   render() {
     return (
       <div className="indexed-section indexed-section--form">
-        <div className="form js-section-margin">
+        <div className="form">
           <form>
             <h3>Vamos falar?</h3>
             <input type="text" placeholder="Name" />

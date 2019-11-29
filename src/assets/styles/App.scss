@@ -7,3 +7,8 @@
 @import "./components/payment-container";
 @import "./components/form";
 @import "./components/footer";
+@import "./components/slider-box";
+
+// slick slider scss
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";

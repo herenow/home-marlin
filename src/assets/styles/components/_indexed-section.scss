@@ -8,12 +8,11 @@
 
   &__index {
     transform: rotate(270deg);
+    transform-origin: right bottom;
     display: flex;
     align-items: center;
-    height: 100%;
-    margin-top: 12%;
-    position: relative;
-    left: 10%;
+    position: absolute;
+    right: 2%;
     cursor: pointer;
 
     p {
@@ -48,8 +47,6 @@
 
   @media(min-width: 1920px) {
     &__index {
-      margin-top: 10%;
-
       &__section {
         font-size: 1em;
       }
@@ -61,19 +58,9 @@
   }
 
   @media(min-width: 2560px) {
-    padding-top: 120px;
-
     &__index {
       span {
         border-bottom: 5px solid lighten(#868593, 40%);
-      }
-
-      &__section {
-        font-size: 1.5em;
-      }
-
-      &__number {
-        font-size: 6em;
       }
     }
   }
