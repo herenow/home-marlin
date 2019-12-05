@@ -25,6 +25,13 @@
       z-index: 0;
     }
   }
+
+  @media(max-width: 1023px) {
+    &__decoration__image,
+    &__decoration__blue-box {
+      display: none;
+    }
+  }
 }
 
 @media(min-width: 1600px) {

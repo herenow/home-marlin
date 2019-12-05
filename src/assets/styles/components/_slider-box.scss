@@ -1,8 +1,6 @@
 .slider-box {
-  display: block;
   width: 80%;
   color: #fff;
-  flex-shrink: 0;
 
   &__image {
     width: 100%;
@@ -56,6 +54,66 @@
 
   &__description {
     padding: 0 10px;
+  }
+
+  @media(max-width: 650px) {
+    &__image {
+      width: 125px !important;
+      height: 125px !important;
+    }
+
+    &__legend {
+      position: static;
+
+      h2 {
+        font-size: 2em;
+        -webkit-text-stroke: 1px #fff;
+      }
+
+      span {
+        width: 4px;
+        height: 4px;
+        border-width: 1px;
+      }
+
+      h3 {
+        font-size: 2em;
+      }
+    }
+
+    &__description {
+      // font-size: 10px;
+    }
+  }
+
+  @media(max-width: 1023px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 9vw;
+
+    &__image {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__legend {
+      position: static;
+
+      h3 {
+        font-size: 5vw;
+      }
+    }
+
+    &__text {
+      width: 50%;
+    }
+
+    &__description {
+      font-size: 2.5vw;
+    }
   }
   
   @media(min-width: 1600px) {

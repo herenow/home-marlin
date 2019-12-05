@@ -33,12 +33,22 @@
       justify-content: space-between;
       position: relative;
 
+      &--mobile {
+        display: none;
+
+        i {
+          &:hover, &:active {
+            color: #3e05c3;
+          }
+        }
+      }
+
       i {
         font-size: 1.7em;
         color: lighten(#868593, 20%);
         cursor: pointer;
 
-        &:hover {
+        &:hover, &:focus {
           color: #3e05c3;
         }
       }
@@ -62,7 +72,7 @@
         font-size: 1.125em;
         cursor: pointer;
 
-        &:hover {
+        &:hover, &:active {
           box-shadow: inset 0px -8px 0px 0px #00e3fe;
         }
       }
@@ -89,6 +99,69 @@
 
     &__limiter {
       padding: 200px 0 47px;
+    }
+  }
+
+  @media(max-width: 1023px) {
+    z-index: 9999;
+    margin-top: 0;
+    bottom: 12.5vw;
+    background-color: transparent;
+
+    &__limiter {
+      padding: 0;
+      flex-wrap: wrap;
+      width: 100%;
+
+      div {
+        flex: 1 1 40%;
+      }
+    }
+
+    &__box {
+      order: 3;
+      align-self: flex-end;
+
+      &__logo {
+        width: 36vw;
+      }
+
+      &__icons {
+        display: none;
+
+        i {
+          font-size: 4vw;
+        }
+  
+        &--mobile {
+          align-self: flex-start;
+          display: flex;
+          order: 2;
+        }
+      }
+    }
+
+    &__links {
+      order: 1;
+      padding: 0;
+
+      ul li {
+        font-size: 3vw;
+
+        &:focus {
+
+        }
+      }
+    }
+
+    &__partner {
+      order: 4;
+
+      img {
+        width: 36vw;
+        position: relative;
+        bottom: 4vw;
+      }
     }
   }
 }

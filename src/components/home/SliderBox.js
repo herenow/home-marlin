@@ -40,14 +40,16 @@ export default class SliderBox extends React.Component {
     return(
       <div className="slider-box">
         <div className={`slider-box__image ${ customClass }`} />
-        <div className="slider-box__legend">
-          <h2>{ `0${ index + 1 }` }</h2>
-          <span />
-          <h3>{ title }</h3>
+        <div className="slider-box__text">
+          <div className="slider-box__legend">
+            <h2>{ `0${ index + 1 }` }</h2>
+            <span />
+            <h3>{ title }</h3>
+          </div>
+          <p className="slider-box__description">
+            { description }
+          </p>
         </div>
-        <p className="slider-box__description">
-          { description }
-        </p>
       </div>
     )
   }

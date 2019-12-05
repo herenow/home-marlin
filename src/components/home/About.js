@@ -11,21 +11,21 @@ export default class Banner extends React.Component {
               <span />
               <div>
                 <p>
-                  A Marlim.co é uma facilitadora de pagamentos, <br />
-                  ou um PSP no jargão comercial (Payment <br />
-                  Service Provider). Somos a solução de meios <br />
-                  de pagamentos para seu comércio, seja <br />
+                  A Marlim.co é uma facilitadora de pagamentos, 
+                  ou um PSP no jargão comercial (Payment 
+                  Service Provider). Somos a solução de meios 
+                  de pagamentos para seu comércio, seja
                   virtual ou físico.
-                  <br />
-                  <br />
-                  Cuidamos de todo o processo com segurança, <br />
-                  transparência e agilidade. Entregamos uma <br />
-                  maior conversão para o seu negócio, operando <br />
-                  com as principais formas de pagamento <br />
+                </p>
+                <p>
+                  Cuidamos de todo o processo com segurança, 
+                  transparência e agilidade. Entregamos uma 
+                  maior conversão para o seu negócio, operando 
+                  com as principais formas de pagamento 
                   disponíveis no mercado.
-                  <br />
-                  <br />
-                  Conheça nossas soluções, a Marlim.co <br />
+                </p>  
+                <p>
+                  Conheça nossas soluções, a Marlim.co 
                   está aqui para tornar tudo possível.
                 </p>
                 <button onClick={ () => this.props.onAboutClick() }>

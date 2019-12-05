@@ -6,7 +6,7 @@ export default class Payment extends React.Component {
       <div className="payment">
         <div className="payment-container" ref={ this.props.servicesReference }>
           <div className="payment-container__content">
-            <section className="payment-container__content__section">
+            <section className="payment-container__section">
               <h2>Pagamento online</h2>
               <p>
                 Anti-fraude integrado
@@ -18,7 +18,7 @@ export default class Payment extends React.Component {
                 One click buy
               </p>
             </section>
-            <section className="payment-container__content__section">
+            <section className="payment-container__section">
               <h2>Pagamento offline</h2>
               <p>
                 POS (Point of Sale)
