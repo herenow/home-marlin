@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 import partnerLogo from '../../assets/images/partner_logo.png';
+import stoneLogo from '../../assets/images/starter_member.png';
 
 export default class Footer extends React.Component {
   renderIcons(forMobile) {
@@ -26,6 +27,12 @@ export default class Footer extends React.Component {
             <img className="footer__box__logo" src={logo} alt="marlim logo"/>
             { this.renderIcons() }
           </div>
+          <div className="footer__stone">
+            <img src={stoneLogo} alt="stone logo"/>
+          </div>
+          <div className="footer__partner">
+            <img src={partnerLogo} alt="partner logo"/>
+          </div>
           <div className="footer__links">
             <ul>
               <li>About</li>
@@ -35,9 +42,6 @@ export default class Footer extends React.Component {
               <li>Termos e condições</li>
               <li>Políticas de privacidade</li>
             </ul>
-          </div>
-          <div className="footer__partner">
-            <img src={partnerLogo} alt="partner logo"/>
           </div>
           <div className="footer__decoration" />
           { this.renderIcons(true) }

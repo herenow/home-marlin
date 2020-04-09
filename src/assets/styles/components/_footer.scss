@@ -23,12 +23,12 @@
     margin-left: 10px;
 
     &__logo {
-      width: 71%;
+      width: 90%;
       margin-bottom: 25px;
     }
 
     &__icons {
-      width: 55%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       position: relative;
@@ -82,11 +82,26 @@
   &__partner {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 
     img {
+      width: 75%;
+    }
+  }
+
+  &__stone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      max-width: 130px;
+      max-height: 145.8px;
       width: 65%;
+      height: auto;
     }
   }
 
@@ -118,22 +133,23 @@
         justify-content: space-evenly;
       }
     }
-
+    
     &__box {
-      order: 3;
+      order: 4;
       align-self: flex-end;
-
+      flex: 1 1 24% !important;
+      
       &__logo {
-        width: 36vw;
+        width: 30vw;
       }
-
+      
       &__icons {
         display: none;
-
+        
         i {
           font-size: 4vw;
         }
-  
+        
         &--mobile {
           align-self: flex-start;
           display: flex;
@@ -141,27 +157,38 @@
         }
       }
     }
-
+    
     &__links {
       order: 1;
       padding: 0;
-
+      
       ul li {
         font-size: 3vw;
-
+        
         &:focus {
-
+          
         }
       }
     }
-
+    
     &__partner {
-      order: 4;
+      order: 5;
+      flex: 1 1 20% !important;
+      
+      img {
+        width: 28vw;
+        position: relative;
+        bottom: 2vw;
+      }
+    }
+    
+    &__stone {
+      order: 3;
+      flex: 1 1 20% !important;
 
       img {
-        width: 36vw;
+        width: 19vw;
         position: relative;
-        bottom: 4vw;
       }
     }
   }
