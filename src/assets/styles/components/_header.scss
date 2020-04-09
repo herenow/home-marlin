@@ -56,7 +56,11 @@
       width: 50%;
       height: 794px;
       background-image: linear-gradient(to bottom, #353387, #e5076c);
-      transition: .5s ease-in-out;
+      transition: right .5s ease-in-out;
+
+      &--mobile {
+        display: block;
+      }
       
       &.active {
         right: 0;
@@ -127,6 +131,10 @@
         display: block;
         height: auto;
         background: none;
+
+        &--mobile {
+          display: none;
+        }
         
         ul {
           flex-direction: row;

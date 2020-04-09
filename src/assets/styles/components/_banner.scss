@@ -1,14 +1,14 @@
-$screen-sizes: (1600px 10px, 1800px 35px, 1920px 45px, 2000px 50px, 2200px 70px);
+// $screen-sizes: (1600px 10px, 1800px 35px, 1920px 45px, 2000px 50px, 2200px 70px);
 
 .banner {
   background: url("../../images/banner_background.png") no-repeat;
   background-size: 100% 100%;
-  padding-bottom: 430px;
 
   &__intro {
     width: 61%;
     margin: 0 auto;
     padding-top: 120px;
+    padding-bottom: 30vw;
 
     &__title {
       margin-left: 8px;
@@ -58,7 +58,7 @@ $screen-sizes: (1600px 10px, 1800px 35px, 1920px 45px, 2000px 50px, 2200px 70px)
 
       &__title {
         h1 {
-          font-size: 6.8vw;
+          font-size: 6.9vw;
           width: 39.7%;
         }
 
@@ -71,14 +71,10 @@ $screen-sizes: (1600px 10px, 1800px 35px, 1920px 45px, 2000px 50px, 2200px 70px)
     }
   }
 
-  @each $size, $extra-size in $screen-sizes {
-
-    @media(min-width: #{$size}) {
-      padding-bottom: calc(430px + (#{$extra-size} * 4));
-
-      &__intro {
-        padding-top: calc(120px + (#{$extra-size} + (#{$extra-size} / 3)));
-      }
+  @media(max-width: 425px) {
+    &__intro__title h1 {
+      font-size: 6.6vw;
+      width: 39.7%;
     }
   }
 }

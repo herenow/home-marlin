@@ -6,7 +6,7 @@ export default class Form extends React.Component {
       <div className="indexed-section indexed-section--form">
         <div className="form">
           <form>
-            <h3>Vamos falar?</h3>
+            <h3>Vamos nos falar?</h3>
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="E-mail" />
             <textarea type="text" placeholder="Message" />

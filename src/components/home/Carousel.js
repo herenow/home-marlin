@@ -12,7 +12,7 @@ export default class Carousel extends React.Component {
   }
 
   buildSlides() {
-    const indexes = this.state.isMobile ? new Array(3) : new Array(6);
+    const indexes = this.state.isMobile ? [1,2,3] : [1,2,3,4,5,6];
     const slides  = [...indexes].map((_value, index) => {
       let indexProp = index <= 2 ? index : (index - 3);
 
@@ -109,16 +109,14 @@ export default class Carousel extends React.Component {
   }
 
   render() {
-    const carousel = this.state.isMobile ? this.renderMobileCarousel() : this.renderDesktopCarousel()
-
     return (
       <section className="slider">
         <div className="slider__container">
           <div className="slider__header" ref={ this.props.aboutReference }>
             <h2>Missão, visão, valores.</h2>
           </div>
-          
-          { carousel }
+          { this.renderDesktopCarousel() }
+          { this.renderMobileCarousel() }
         </div>
       </section>
     );

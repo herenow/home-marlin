@@ -12,7 +12,7 @@ export default class Header extends React.Component {
 
   setDropdownHeight(dropdownContent) {
     const bannerHeight = document.querySelector('.banner').getBoundingClientRect().height
-    const aboutHeight  = document.querySelector('.indexed-section').getBoundingClientRect().height
+    const aboutHeight  = document.querySelector('.about').getBoundingClientRect().height
 
     dropdownContent.style.height = `${ bannerHeight + aboutHeight }px`
   }
@@ -21,6 +21,8 @@ export default class Header extends React.Component {
     const dropdownTrigger = element.currentTarget
     const dropdownContent = document.getElementById('dropdown')
 
+    this.setDropdownHeight(dropdownContent)
+
     dropdownContent.classList.toggle('active')
     dropdownTrigger.childNodes.forEach((triggerBar) => {
       triggerBar.classList.toggle('active')
@@ -28,12 +30,12 @@ export default class Header extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
-      this.setState({ setHeight: true })
-    }
+    // After component mount, change state for the height to be set
+    this.setState({ setHeight: true })
   }
 
   render () {
+    // Only set dropdown height if component was rendered
     if (this.state.setHeight) {
       const dropdownContent = document.getElementById('dropdown')
 
@@ -52,7 +54,17 @@ export default class Header extends React.Component {
             <span />
             <span />
           </div>
-          <nav id="dropdown" className="header__container__menu">
+          <nav className="header__container__menu">
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Blog</li>
+              <li>Contact us</li>
+            </ul>
+          </nav>
+          <nav id="dropdown" className="header__container__menu header__container__menu--mobile">
             <ul>
               <li>Home</li>
               <li>About us</li>
