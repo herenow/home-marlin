@@ -76,6 +76,11 @@
         font-size: 1.125em;
         cursor: pointer;
 
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+
         &:hover, &:active {
           box-shadow: inset 0px -8px 0px 0px #00e3fe;
         }
