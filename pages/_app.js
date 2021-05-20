@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #fff;
+    overflow-x: hidden;
   } 
 
   main, .mw {
@@ -50,6 +51,10 @@ const GlobalStyle = createGlobalStyle`
 
   a, button {
     cursor: pointer!important;
+  }
+
+  ul {
+    list-style: none;
   }
 
   .flex {

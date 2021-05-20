@@ -6,7 +6,7 @@ import { appColors } from 'utils';
 const Header = () => {
 
   return (
-    <HEADER className="flex">
+    <HEADER className="flex mw">
       <Logo />
       <nav className="flex">
         <a title="Home" href={void (0)}>Home</a>
@@ -27,6 +27,10 @@ export const HEADER = styled.header`
 
   padding: 32px 0;
   justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
 
   > svg {
     width: 140px;
