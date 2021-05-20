@@ -1,0 +1,156 @@
+.form {
+  width: 61%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  form {
+    width: 75.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #353387;
+
+    h3 {
+      margin-top: 60px;
+      margin-bottom: 80px;
+      font-family: 'Righteous', cursive;
+      font-size: 2vw;
+      font-weight: 400;
+    }
+
+    input, textarea {
+      width: 70%;
+      height: 40px;
+      margin-bottom: 30px;
+      background-color: #3e05c3;
+      border: 2px solid #2f0495;
+      color: #fff;
+      padding-left: 20px;
+      font-family: inherit;
+      font-size: 1vw;
+
+      &::-webkit-input-placeholder {
+        color: #fff;
+      }
+
+      &:hover, &:focus {
+        outline: 2px solid #e60b6f;
+      }
+    }
+
+    textarea {
+      height: 125px;
+      padding-top: 15px;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 15px;
+
+    button {
+      position: relative;
+      appearance: none;
+      border-radius: 25px;
+      background-color: #e60b6f;
+      border: 3px solid #353387;
+      width: 13%;
+      height: 40px;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 1vw;
+      color: #fff;
+      box-shadow: 3px 4px 0 -2px #e60b6f;
+      cursor: pointer;
+
+      &:hover, &:focus {
+        top: 4px;
+        left: 3px;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  @media(min-width: 1920px) {
+    form {
+      h3 {
+        margin-top: 70px;
+        margin-bottom: 120px;
+      }
+
+      input {
+        height: 60px;
+      }
+
+      textarea {
+        height: 150px;
+      }
+    }
+
+    &__bottom {
+      margin-bottom: 100px;
+
+      button {
+        height: 50px;
+      }
+    }
+  }
+
+  @media(max-width: 1300px) {
+    width: 70%;
+  }
+
+  @media(max-width: 1100px) {
+    width: 80%;
+  }
+
+  @media(max-width: 1023px) {
+    width: 100%;
+
+    form {
+      width: 85%;
+      position: relative;
+      bottom: 25vw;
+
+      h3 {
+        margin-top: 8vw;
+        margin-bottom: 12vw;
+        font-size: 3vw;
+      }
+
+      input, textarea {
+        font-size: 1.5vw;
+      }
+      
+      input {
+        height: 6vw;
+        margin-bottom: 4vw;
+      } 
+
+      textarea {
+        height: 14.5vw;
+        margin-bottom: 8vw;
+      }
+    }
+
+    &__bottom {
+      margin-top: 0;
+      margin-bottom: 9vw;
+
+      button {
+        height: 8vw;
+        width: 16vw;
+        font-size: 2vw;
+        border-radius: 4vw;
+      }
+    }
+  }
+}

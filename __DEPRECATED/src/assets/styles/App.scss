@@ -1,0 +1,14 @@
+@import "./components/header";
+@import "./components/banner";
+@import "./components/indexed-section";
+@import "./components/about";
+@import "./components/slider";
+@import "./components/payment";
+@import "./components/payment-container";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/slider-box";
+
+// slick slider scss
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";

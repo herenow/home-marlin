@@ -1,0 +1,63 @@
+.payment {
+  width: 100%;
+
+  &__decoration {
+    display: flex;
+
+    &__image {
+      background: url('../../images/payment.png') center no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 39%;
+      height: 320px;
+      left: 7%;
+      bottom: 200px;
+      z-index: 1;
+    }
+
+    &__blue-box {
+      position: relative;
+      background-color: #353387;
+      width: 31%;
+      height: 270px;
+      right: 39%;
+      bottom: 100px;
+      z-index: 0;
+    }
+  }
+
+  @media(max-width: 1023px) {
+    &__decoration__image,
+    &__decoration__blue-box {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: 1600px) {
+  .payment__decoration {
+    &__image {
+      height: 400px;
+      left: 10%;
+      bottom: 250px;
+    }
+
+    &__blue-box {
+      height: 320px;
+    }
+  }
+}
+
+@media(min-width: 1920px) {
+  .payment__decoration {
+    &__image {
+      height: 545px;
+      left: 10%;
+      bottom: 300px;
+    }
+
+    &__blue-box {
+      height: 415px;
+    }
+  }
+}
