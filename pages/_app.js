@@ -32,11 +32,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-
+    background: #fff;
   } 
 
-  main {
-
+  main, .mw {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   img {

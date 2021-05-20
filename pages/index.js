@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import Header from 'components/Header';
+import Hero from 'components/Hero';
+
 export async function getStaticProps() {
   return {
     props: {}
@@ -10,7 +13,8 @@ const Home = () => {
 
   return (
     <HOME>
-      <h1>Marlim</h1>
+      <Header />
+      <Hero />
     </HOME>
   )
 
