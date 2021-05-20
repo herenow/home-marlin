@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "projeto-teste-645a7"
+  },
+  "targets": {
+    "projeto-teste-645a7": {
+      "hosting": {
+        "production": [
+          "projeto-teste-645a7"
+        ],
+        "v2": [
+          "marlim-site-v2"
+        ]
+      }
+    }
   }
 }
