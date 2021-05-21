@@ -70,7 +70,7 @@ const Products = () => {
 
 export const PRODUCTS = styled.section`
   
-  margin: 136px 0 0; 
+  margin: 136px 0; 
 
   > h2 {
     margin: 0 0 136px; 

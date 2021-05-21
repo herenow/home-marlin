@@ -67,7 +67,6 @@ export const HERO = styled.section`
     }
 
     > button {
-
       color: #fff;
       width: 152px;
       height: 40px;
@@ -77,15 +76,11 @@ export const HERO = styled.section`
       border: 1px solid transparent;
       transition: var(--transition);
       background: ${appColors.blue};
-      /* background: linear-gradient(90deg, rgba(224,7,108,1) 0%, rgba(55,50,134,1) 100%); */
-      
-
       :hover {
         border-color: ${appColors.blue};
         background: transparent;
         color: ${appColors.blue};
       }
-
     }
   
   }

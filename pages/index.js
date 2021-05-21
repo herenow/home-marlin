@@ -4,6 +4,8 @@ import Header from 'components/Header';
 import Hero from 'components/Hero';
 import OurClients from 'components/OurClients';
 import Products from 'components/Products';
+import Cta from 'components/Cta';
+import Testimonials from 'components/Testimonials';
 
 export async function getStaticProps() {
   return {
@@ -19,6 +21,8 @@ const Home = () => {
       <Hero />
       <OurClients />
       <Products />
+      <Cta />
+      <Testimonials />
     </HOME>
   )
 
