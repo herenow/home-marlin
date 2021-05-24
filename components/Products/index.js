@@ -8,7 +8,7 @@ import Digital from './icons/digital.svg';
 const Products = () => {
 
   return (
-    <PRODUCTS>
+    <PRODUCTS id="produtos">
       <h2>Produtos</h2>
       <article className="flex">
         <aside>

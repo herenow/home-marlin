@@ -8,7 +8,7 @@ import Three from './icons/three.svg';
 const OurClients = () => {
 
   return (
-    <OURCLIENTS className="mw">
+    <OURCLIENTS className="mw" id="clientes">
       <h2>Our Clients</h2>
       <ul className="flex">
         <li><img src="/images/clients/confidence.png" alt="Confidence" /></li>

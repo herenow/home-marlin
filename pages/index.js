@@ -6,6 +6,9 @@ import OurClients from 'components/OurClients';
 import Products from 'components/Products';
 import Cta from 'components/Cta';
 import Testimonials from 'components/Testimonials';
+import Contact from 'components/Contact';
+import Partnership from 'components/Partnership';
+import Footer from 'components/Footer';
 
 export async function getStaticProps() {
   return {
@@ -23,11 +26,15 @@ const Home = () => {
       <Products />
       <Cta />
       <Testimonials />
+      <Contact />
+      <Partnership />
+      <Footer />
     </HOME>
   )
 
 }
 
-export const HOME = styled.main``;
+export const HOME = styled.main`
+`;
 
 export default Home;

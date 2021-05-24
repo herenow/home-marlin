@@ -6,10 +6,10 @@ import { appColors } from 'utils';
 const Header = () => {
 
   return (
-    <HEADER className="flex mw">
+    <HEADER id="home" className="flex mw">
       <Logo />
       <nav className="flex">
-        <a title="Home" href={void (0)}>Home</a>
+        <a title="Home" href="#home">Home</a>
         <a title="Clientes" href="#clientes">Clientes</a>
         <a title="Produtos" href="#produtos">Produtos</a>
         <a title="Contato" href="#contato">Contato</a>
