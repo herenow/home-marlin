@@ -26,7 +26,7 @@ const Header = () => {
 export const HEADER = styled.header`
 
   padding: 32px 0;
-  justify-content: space-between;
+  justify-content: space-between!important;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -68,6 +68,10 @@ export const HEADER = styled.header`
       
       }
 
+      @media (max-width: 576px) {
+        display: none;
+      }
+
     }
     
     :last-of-type {
@@ -96,6 +100,10 @@ export const HEADER = styled.header`
 
     }
 
+  }
+
+  @media (max-width: 576px) {
+    background: #fff;
   }
 
 `;

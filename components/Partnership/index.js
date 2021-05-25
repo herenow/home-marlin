@@ -80,6 +80,28 @@ export const PARTNERSHIP = styled.section`
       }
     }
 
+    @media (max-width: 576px) {
+      flex-direction: column;
+
+      > header {
+        margin: 0;
+        order: 2;
+        text-align: center;
+      }  
+      > aside {
+        order: 2;
+        margin: 32px 0 0;
+        > strong  {
+          display: none;
+        }
+        > div {
+          > svg, hr {
+            display: none;
+          }
+        }
+      }  
+    }
+
   }
 
   ::after {

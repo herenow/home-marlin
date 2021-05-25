@@ -91,6 +91,40 @@ export const HERO = styled.section`
     right: 0;
     height: 95vh;
   }
+  
+  @media (max-width: 576px) {
+    
+    flex-direction: column;
+    align-items: flex-start!important;
+    /* padding: 104px 0 0; */
+    
+    > div {
+      order: 2;
+      margin: 50px 0 0;
+      > h1 {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+      }
+    }
+
+    > svg {
+      
+      position: unset;
+      height: 50vw;
+      transform: scaleX(-1);
+      align-self: center;
+      order: 1;
+      display: none;
+
+      > g {
+        > g:first-of-type {
+          display: none;
+        }
+      }
+
+    }
+  
+  }
 
 `;
 

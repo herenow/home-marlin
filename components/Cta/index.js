@@ -95,6 +95,17 @@ export const CTA = styled.section`
     z-index: -1;
   }
 
+  @media (max-width: 576px) {
+    > h2 {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+    > p {
+      max-width: 90%;
+      margin: 40px 0;
+    }
+  } 
+
 `;
 
 export default Cta;

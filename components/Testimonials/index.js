@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { appColors } from 'utils';
 
-import One from './icons/one.svg';
+import One2 from './icons/one.svg';
 import Two from './icons/two.svg';
 import Three from './icons/three.svg';
 import Quotes from './icons/quotes.svg';
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     fill: '#1de08f',
-    icon: <One />,
+    icon: <One2 />,
     name: 'Francisco',
     job: 'QBE Consultoria Financeira',
     content: 'A Marlim possibilitou ao mercado de contabilidade a questão dos pagamentos recorrentes, e isso fez com que nossa inadimplencia diminuisse a quase zero.'
@@ -94,6 +94,7 @@ export const TESTIMONIALS = styled.section`
       background: #fff;
       box-shadow: 0 16px 32px rgba(0, 0, 0, .08);
       position: relative;
+      z-index: 1;
 
       > figure {
         position: absolute;
@@ -148,6 +149,15 @@ export const TESTIMONIALS = styled.section`
         top: 140px;
       }
 
+      @media (max-width: 576px) {
+        :first-of-type, :last-of-type {
+          top: unset;
+        }
+        :nth-child(2) {
+          margin: 120px 0;
+        }
+      }
+
     }
 
     > div {
@@ -164,8 +174,6 @@ export const TESTIMONIALS = styled.section`
   }
 
   > div {
-    /* top: -60px; */
-    /* left: -60px; */
     position: absolute;
     width: 100vw;
     height: 80px;
@@ -173,6 +181,19 @@ export const TESTIMONIALS = styled.section`
     transform: scaleX(-1);
     top: 55%;
     left: calc(-100vw + 352px);
+  }
+
+  @media (max-width: 576px) {
+    padding: calc(552px + 100px) 0 100px;
+    > h5 {
+      margin: 8px auto 100px;
+    }
+    > section {
+      flex-direction: column;
+      svg {
+        min-width: 36px;
+      }
+    }
   }
 
 `;

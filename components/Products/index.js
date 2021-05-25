@@ -13,12 +13,11 @@ import Api from './icons/api.svg';
 const Products = () => {
 
   return (
-    <PRODUCTS id="produtos">
+    <PRODUCTS id="produtos" className="mw">
       <h2>Produtos</h2>
       <article className="flex">
         <aside>
           <h3>Te ajudamos a criar a melhor solução para a <span>sua empresa</span></h3>
-          {/* <p>Deixe com a gente a parte burocrática, jurídica e etcs.<br /> Se preocupe apenas em aumentar o portifólio do seu negócio.</p> */}
           <p>Deixe com a gente toda a parte tecnológica, burocrática e jurídica.<br />Se preocupe apenas em aumentar o portfólio da sua empresa.</p>
           <ul className="flex">
             <li className="flex">
@@ -218,7 +217,71 @@ export const PRODUCTS = styled.section`
       max-width: 569px;
     }
 
+    @media (max-width: 576px) {
+      
+      flex-direction: column;
+
+      > aside {
+        order: 1;
+        max-width: unset;
+        margin: 0 0 40px;
+        > ul {
+          > li {
+            width: 100%;
+            margin: 0 0 16px!important;
+            :last-of-type {
+              margin: 0!important;
+            }
+          }
+        }
+        > h3 {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+        > p {
+          max-width: unset;
+        }
+      }
+      
+      > figure {
+        order: 2;
+        > img {
+          max-width: 50vw!important;
+        }
+        > div {
+          top: 0;
+        }
+      }
+
+      :nth-child(3) {
+        > aside {
+          > h3, p {
+            text-align: right;
+            max-width: unset;
+          }
+          > ul {
+            li {
+              transform: scaleX(-1);
+              > strong {
+                transform: scaleX(-1);
+              }
+            }
+          }
+        } 
+      }
+
+    }
+
   }
+
+  @media (max-width: 576px) {
+    margin: 100px 0 0;
+    overflow: hidden;
+    > h2 {
+      margin: 0 0 100px;
+    }
+  }
+
 
 `;
 

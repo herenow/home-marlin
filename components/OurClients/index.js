@@ -8,13 +8,15 @@ import Three from './icons/three.svg';
 const OurClients = () => {
 
   return (
-    <OURCLIENTS className="mw" id="clientes">
+    <OURCLIENTS id="clientes" className="mw">
       <h2>Clientes</h2>
       <ul className="flex">
         <li><img src="/images/clients/confidence.png" alt="Confidence" /></li>
+        <li><img src="/images/clients/usend.png" alt="Usend" /></li>
         <li><img src="/images/clients/simple.png" alt="Simple" /></li>
         <li><img src="/images/clients/vips.png" alt="Vips" /></li>
         <li><img src="/images/clients/amz.png" alt="Amz" /></li>
+        <li><img src="/images/clients/sekron.png" alt="Sekron" /></li>
         <li><img src="/images/clients/picchioni.png" alt="Picchioni" /></li>
         <li><img src="/images/clients/cambio_store.png" alt="CambioStore" /></li>
         <li><img src="/images/clients/frente.png" alt="Frente" /></li>
@@ -61,9 +63,9 @@ export const OURCLIENTS = styled.section`
     padding: 40px 0;
 
     > li {
-      min-width: 248px;
-      max-width: 248px;
-      margin: 0 40px 0 0;
+      min-width: 200px;
+      max-width: 200px;
+      margin: 0 24px 0 0;
       > img {
         width: 100%;
       }
@@ -116,9 +118,42 @@ export const OURCLIENTS = styled.section`
         background: rgba(82, 74, 199, .24);
       }
 
+      @media (max-width: 1280px) {
+        width: 30%;
+      }
+      
+      @media (max-width: 576px) {
+        width: 100%;
+        margin: 0 0 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > h4 {
+          margin: 32px 0 16px;
+        }
+        > p {
+          text-align: center;
+        }
+        :last-of-type {
+          margin: 0;
+        }
+      }
+      
+    }
+    
+    @media (max-width: 576px) {
+      flex-direction: column;
+      margin: calc(96px / 2) 0 0;
     }
   
   }
+
+  @media (max-width: 576px) {
+    > ul {
+      padding: 50px 0;
+    }
+  }
+
 
 `;
 

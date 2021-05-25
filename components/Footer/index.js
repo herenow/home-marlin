@@ -84,6 +84,36 @@ export const FOOTER = styled.footer`
     z-index: -1;
   }
 
+  @media (max-width: 576px) {
+    padding: calc(100px + 520px) 0 0;
+    > div {
+      padding: 16px 0;
+      flex-direction: column;
+      nav {
+        margin: 32px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(2, 40px);
+        align-items: center;
+        justify-content: center;
+        > a {
+          :first-of-type {
+            display: none;
+          }
+          margin: 0;
+          text-align: center;
+        }
+      }
+      > svg, > img {
+        width: 105px;
+      }
+    }
+    > svg {
+      height: 50vh;
+      right: -50%;
+    }
+  }
+
 `;
 
 export default Footer;

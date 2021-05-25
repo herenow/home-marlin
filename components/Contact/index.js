@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <CONTACT className="flex" id="contato">
+    <CONTACT id="contato" className="flex">
       <section>
         <h3>Vamos nos <span>falar?</span></h3>
         {/* <p>Estamos aguardando o seu contato para te ajudar a criar a solução ideal para você!</p> */}
@@ -224,6 +224,23 @@ export const CONTACT = styled.section`
     transform: scaleX(-1);
     bottom: calc(136px + 70px);
     left: calc(-100vw + 352px);
+  }
+
+  @media (max-width: 576px) {
+    align-items: flex-start!important;
+    flex-direction: column;
+    padding: 0 4% 100px;
+    > form {
+      margin: 50px 0 0;
+      z-index: 1;
+      width: 100%;
+      > fieldset {
+        > div > input {
+          flex: unset;
+          width: 100%;
+        }
+      }
+    }
   }
 
 `;

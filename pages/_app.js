@@ -37,8 +37,23 @@ const GlobalStyle = createGlobalStyle`
   } 
 
   main, .mw {
+    
     max-width: 1300px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1280px) {
+      max-width: unset;
+      width: 100%;
+    }
+
+  }
+
+  .mw {
+    @media (max-width: 1280px) {
+      padding-left: 4%!important;
+      padding-right: 4%!important;
+    }
   }
 
   img {
