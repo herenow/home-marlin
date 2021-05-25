@@ -14,8 +14,9 @@ const Footer = () => {
           <a title="Clientes" href="#clientes">Clientes</a>
           <a title="Produtos" href="#produtos">Produtos</a>
           <a title="Contato" href="#contato">Contato</a>
-          <a title="Termos" href="https://docs.google.com/document/u/1/d/e/2PACX-1vSyYThZ7u__rAxFd-bjMRamuFA-4myE3gTZweExO9AngNQTxFt1Wiu8osQwjjyhsIg8jSizSluasuPB/pub" target="_blank">Termos</a>
-          <a title="Privacidade" href="#" target="_blank">Privacidade</a>
+          <a title="API" target="_blank" href="http://api.marlim.co">API</a>
+          <a title="Suporte" target="_blank" href="https://marlim.zendesk.com/hc/pt-br">Suporte</a>
+          <a title="Privacidade" href="https://docs.google.com/document/u/1/d/e/2PACX-1vSuDTWDBB6CFT2UGT1MyOHyFl_-f8Hx0uECAJstfvnCbccBEWHyHkRxQ-b7qf4De-wuTSM3C_2_L3do/pub" target="_blank">Privacidade</a>
         </nav>
         <img src="/images/selo_stone.png" alt="Stone PatternShip Program" />
       </div>

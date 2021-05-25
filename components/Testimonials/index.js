@@ -1,25 +1,32 @@
 import styled from 'styled-components';
 import { appColors } from 'utils';
-import Quotes from './quotes.svg';
+
+import One from './icons/one.svg';
+import Two from './icons/two.svg';
+import Three from './icons/three.svg';
+import Quotes from './icons/quotes.svg';
 
 const testimonials = [
   {
-    avatar: '/images/fakes/testimonials.png',
-    name: 'Maria Luiza',
-    job: 'Empreendedora',
-    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod'
+    fill: '#373286',
+    icon: <Three />,
+    name: 'Débora',
+    job: 'Grupo Travelex Confidence',
+    content: 'A parceria com a Marlim foi uma decisão certeira. O fator determinante foi o serviço antifraude, mas hoje eu indicaria a Marlim pela equipe sensacional, parceira e pró negócio.'
   },
   {
-    avatar: '/images/fakes/testimonials.png',
-    name: 'Maria Luiza',
-    job: 'Empreendedora',
-    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod'
+    fill: '#e0076c',
+    icon: <Two />,
+    name: 'Gabriela',
+    job: 'Tag ID',
+    content: 'Utilizei a Marlim-Go para um cliente, gerei um link de pagamento e foi super simples. O cliente parcelou em 12x e eu recebi no dia seguinte na minha conta, ótimo para os dois.'
   },
   {
-    avatar: '/images/fakes/testimonials.png',
-    name: 'Maria Luiza',
-    job: 'Empreendedora',
-    content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod'
+    fill: '#1de08f',
+    icon: <One />,
+    name: 'Francisco',
+    job: 'QBE Consultoria Financeira',
+    content: 'A Marlim possibilitou ao mercado de contabilidade a questão dos pagamentos recorrentes, e isso fez com que nossa inadimplencia diminuisse a quase zero.'
   }
 ]
 
@@ -27,15 +34,16 @@ const Testimonials = () => {
 
   return (
     <TESTIMONIALS>
-      <strong>Clients community</strong>
-      <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h5>
+      <strong>Comunidade de Clientes</strong>
+      <h5>O que os nossos parceiros dizem...</h5>
       <section className="flex">
         {
-          testimonials.map(({ avatar, name, job, content }, index) => {
+          testimonials.map(({ icon, name, job, content, fill }, index) => {
             return (
               <article key={index} className="flex c">
-                <figure>
-                  <img src={avatar} alt={name} />
+                <figure className="flex" style={{ borderColor: fill }}>
+                  {icon}
+                  {/* <img src={avatar} alt={name} /> */}
                 </figure>
                 <h2>{name}</h2>
                 <strong>{job}</strong>
@@ -80,7 +88,7 @@ export const TESTIMONIALS = styled.section`
     > article {
 
       background: red;
-      width: 328px;
+      width: 360px;
       height: 359px;
       border-radius: 24px;
       background: #fff;
@@ -95,10 +103,11 @@ export const TESTIMONIALS = styled.section`
         overflow: hidden;
         top: 0;
         transform: translateY(-50%);
-        > img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        border: 2px solid;
+        background: #fff;
+        > svg {
+          min-height: 36px;
+          max-height: 36px;
         }
       }
 
@@ -116,7 +125,7 @@ export const TESTIMONIALS = styled.section`
       }
 
       > svg {
-        height: 36px;
+        height: 20px;
         margin: 22px 0 18px;
       }
 
@@ -124,7 +133,7 @@ export const TESTIMONIALS = styled.section`
         font-weight: 300;
         font-size: 1.6rem;
         color: rgba(59, 55, 68, .5);
-        max-width: 200px;
+        max-width: 85%;
       }
 
       :first-of-type {

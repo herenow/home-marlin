@@ -9,7 +9,7 @@ const Partnership = () => {
       <div className="flex">
         <header>
           <h2>Além disso</h2>
-          <p>Nos preocupamos com nosso planeta. Doamos parte do nosso lucro de forma recorrente à Sea Shepherd, organização que trabalha em pról da proteção e conservação da vida marinha no planeta.</p>
+          <p>Parte do nosso lucro é doado de forma recorrente para a <b>Sea Shepherd</b>, organização que trabalha em prol da proteção e conservação da vida marinha no planeta.</p>
         </header>
         <aside>
           <strong>Parceria</strong>
@@ -41,7 +41,7 @@ export const PARTNERSHIP = styled.section`
     height: 100%;
 
     > header {
-      margin: 0 300px 0 0;
+      margin: 0 280px 0 0;
       > h2 {
         font-weight: 700;
         font-size: 4.8rem;
@@ -50,7 +50,10 @@ export const PARTNERSHIP = styled.section`
         margin: 16px 0 0;
         font-size: 1.6rem;
         line-height: 2.4rem;
-        max-width: 300px;
+        max-width: 320px;
+        > b {
+          font-weight: 700;
+        }
       }
     }
     
@@ -77,6 +80,17 @@ export const PARTNERSHIP = styled.section`
       }
     }
 
+  }
+
+  ::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
 `;

@@ -7,10 +7,10 @@ const Hero = () => {
  return (
    <HERO className="flex">
      <div className="flex c mw">
-        <strong>Welcome to Marlim.co</strong>
-        <h1>Lorem ipsum dolor <span>sit amet</span> consetetur</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-        <button className="flex">CTA Button</button>
+        <strong>Nós somos a Marlim.co</strong>
+        <h1>Pagamentos <span>sob medida</span> para você</h1>
+        <p>Aqui, sua empresa é que diz o que precisa.<br />Nada de produtos de prateleiras.</p>
+        <a href="#contato" className="flex">Saiba Mais</a>
      </div>
      <Ilustra />
    </HERO>
@@ -66,7 +66,7 @@ export const HERO = styled.section`
       margin: 8px 0 40px;
     }
 
-    > button {
+    > a {
       color: #fff;
       width: 152px;
       height: 40px;

@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { appColors } from 'utils';
 
@@ -8,23 +9,38 @@ import User from './icons/user.svg';
 
 const Contact = () => {
 
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+
+  const [buttonText, set_buttonText] = useState('Enviar');
+
+  const sendForm = () => {
+
+    if(nameRef.current.value === '' || emailRef.current.value === '' || buttonText === 'Enviado 😎') return;
+
+    set_buttonText('enviando...');
+    setTimeout(() => set_buttonText('Enviado 😎'), 2000)
+
+  }
+
   return (
     <CONTACT className="flex" id="contato">
       <section>
         <h3>Vamos nos <span>falar?</span></h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+        {/* <p>Estamos aguardando o seu contato para te ajudar a criar a solução ideal para você!</p> */}
+        <p>Aguardamos o seu contato para trabalharmos conjuntamente na solução ideal para você!</p>
         <ul>
           <li className="flex">
             <Phone />
-            <span>+55 11 3248 9421</span>
+            <span>+55 11 98579-6477</span>
           </li>
           <li className="flex">
             <Mail />
-            <span>contato@marlim.co</span>
+            <span>atendimento@marlim.co</span>
           </li>
           <li className="flex">
             <Location />
-            <span>Av. Brg. Faria Lima, 4440 - Vila Olímpia, São Paulo - SP, 04538-132</span>
+            <span>Av. Eng. Luís Carlos Berrini, 1139 - Itaim, São Paulo - SP, 04571-010</span>
           </li>
         </ul>
       </section>
@@ -33,21 +49,21 @@ const Contact = () => {
           <label>Seu Nome</label>
           <div>
             <User />
-            <input type="text" />
+            <input ref={nameRef} type="text" />
           </div>
         </fieldset>
         <fieldset>
           <label>Seu E-mail</label>
           <div>
             <Mail />
-            <input type="email" />
+            <input ref={emailRef} type="email" />
           </div>
         </fieldset>
         <fieldset>
           <label>Mensagem</label>
           <textarea placeholder="Digite aqui..." />
         </fieldset>
-        <button>Enviar</button>
+        <button onClick={sendForm}>{buttonText}</button>
       </form>
       <div />
     </CONTACT>

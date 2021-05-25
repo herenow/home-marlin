@@ -9,7 +9,7 @@ const OurClients = () => {
 
   return (
     <OURCLIENTS className="mw" id="clientes">
-      <h2>Our Clients</h2>
+      <h2>Clientes</h2>
       <ul className="flex">
         <li><img src="/images/clients/confidence.png" alt="Confidence" /></li>
         <li><img src="/images/clients/simple.png" alt="Simple" /></li>
@@ -22,18 +22,18 @@ const OurClients = () => {
       <section>
         <div>
           <span className="flex"><One /></span>
-          <h4>Lorem ipsum dolor</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+          <h4>Produtos Personalizados</h4>
+          <p>Aqui, quem dá as cartas é você. Nos diga qual é a sua demanda e nós te entregamos a solução.</p>
         </div>
         <div>
           <span className="flex"><Two /></span>
-          <h4>Lorem ipsum dolor</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+          <h4>Atendimento Pessoal</h4>
+          <p>Nossa equipe está a sua disposição sempre que precisar. Gostamos do termo "problem solving".</p>
         </div>
         <div>
           <span className="flex"><Three /></span>
-          <h4>Lorem ipsum dolor</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+          <h4>Eficiência e Segurança</h4>
+          <p>Venda mais para seus clientes com a melhor experiência, sem correr riscos de fraude.</p>
         </div>
       </section>
     </OURCLIENTS>

@@ -6,9 +6,9 @@ const Cta = () => {
   return (
     <CTA className="flex c">
       <div /> 
-      <h2>Lorem ipsum dolor sit amet consetetur</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-      <button className="flex">CTA Button</button>
+      <h2>Pioneiros no mercado de Câmbio Online</h2>
+      <p>Fomos os primeiros a desenvolver soluções exclusivas para o mercado de câmbio online, possibilitando que clientes pudessem comprar moeda estrangeira em até 12x no cartão.</p>
+      <a href="#contato" className="flex">Venda em até 12x</a>
       <div />
     </CTA>
   )
@@ -38,13 +38,13 @@ export const CTA = styled.section`
     font-size: 1.6rem;
     line-height: 2.4rem;
     max-width: 544px;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .8);
     margin: 24px 0;
   }
 
-  > button {
+  > a {
     color: #fff;
-    width: 152px;
+    padding: 0 20px;
     height: 40px;
     font-size: 1.6rem;
     font-weight: 700;
@@ -82,6 +82,17 @@ export const CTA = styled.section`
       right: 7%;
     }
 
+  }
+
+  ::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
 `;

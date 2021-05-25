@@ -15,8 +15,8 @@ const Header = () => {
         <a title="Contato" href="#contato">Contato</a>
       </nav>
       <nav className="flex">
-        <a className="flex" href="#">API</a>
-        <a className="flex" href="#">Login</a>
+        <a className="flex" target="_blank" href="http://api.marlim.co">API</a>
+        {/* <a className="flex" href="#">Login</a> */}
       </nav>
     </HEADER>
   )
@@ -80,27 +80,16 @@ export const HEADER = styled.header`
         font-size: 1.6rem;
         font-weight: 700;
         border-color: ${appColors.pink};
+        background: #fff;
         border-radius: 40px;
         transition: var(--transition);
+        color: ${appColors.pink};
         
         :first-of-type {
-          color: ${appColors.pink};
-          margin: 0 24px 0 0;
           :hover {
-            color: ${appColors.blue};
+            color: #fff;
+            background: ${appColors.pink};
           }
-        }
-        
-        :last-of-type {
-          background: ${appColors.pink};
-          color: #fff;
-          :hover {
-            background: ${appColors.blue};
-          }
-        }
-
-        :hover {
-          border-color: ${appColors.blue};
         }
         
       }

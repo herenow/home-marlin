@@ -3,7 +3,12 @@ import { appColors } from 'utils';
 
 import Link from './icons/link.svg';
 import Sale from './icons/sale.svg';
+import Pix from './icons/pix.svg';
 import Digital from './icons/digital.svg';
+import Dashboard from './icons/dashboard.svg';
+import Split from './icons/split.svg';
+import Recurrence from './icons/recurrence.svg';
+import Api from './icons/api.svg';
 
 const Products = () => {
 
@@ -12,16 +17,25 @@ const Products = () => {
       <h2>Produtos</h2>
       <article className="flex">
         <aside>
-          <h3>Lorem ipsum dolor sit amet, consetetur <span>sadipscing</span> elitr, sed</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+          <h3>Te ajudamos a criar a melhor solução para a <span>sua empresa</span></h3>
+          {/* <p>Deixe com a gente a parte burocrática, jurídica e etcs.<br /> Se preocupe apenas em aumentar o portifólio do seu negócio.</p> */}
+          <p>Deixe com a gente toda a parte tecnológica, burocrática e jurídica.<br />Se preocupe apenas em aumentar o portfólio da sua empresa.</p>
           <ul className="flex">
             <li className="flex">
-              <span className="flex"><Link /></span>
-              <strong>Link de Pagamento</strong>
+              <span className="flex"><Dashboard /></span>
+              <strong>Dashboard de Métricas</strong>
             </li>
             <li className="flex">
-              <span className="flex"><Sale /></span>
-              <strong>Venda por Mensalidade</strong>
+              <span className="flex">
+                <Api />
+              </span>
+              <strong>Integração com API</strong>
+            </li>
+            <li className="flex">
+              <span className="flex">
+                <Sale />
+              </span>
+              <strong>Venda com PIX</strong>
             </li>
           </ul>
         </aside>
@@ -36,28 +50,36 @@ const Products = () => {
           <div />
         </figure>
         <aside>
-          <h3>Lorem ipsum dolor sit amet, consetetur <span>sadipscing</span> elitr, sed</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+          <h3>Alguns produtos que já criamos com os <span>nossos clientes</span></h3>
+          <p>Se você tem uma loja online, marketplace, é profissional autônomo ou liberal, temos diversas soluções para atendê-lo.</p>
           <ul className="flex">
             <li className="flex">
               <span className="flex"><Link /></span>
               <strong>Link de Pagamento</strong>
             </li>
             <li className="flex">
-              <span className="flex"><Sale /></span>
-              <strong>Venda por Mensalidade</strong>
+              <span className="flex">
+                <Recurrence />
+              </span>
+              <strong>Pagamentos Recorrentes</strong>
             </li>
             <li className="flex">
               <span className="flex"><Digital /></span>
-              <strong>Venda digitalizada</strong>
+              <strong>Venda Digital</strong>
+            </li>
+            <li className="flex">
+              <span className="flex">
+                <Split />
+              </span>
+              <strong>Split de Pagamentos</strong>
             </li>
           </ul>
         </aside>
       </article>
       <article className="flex">
         <aside>
-          <h3>Lorem ipsum dolor sit amet, consetetur <span>sadipscing</span> elitr, sed</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+          <h3>E também temos as famosas <span>Maquininhas POS</span></h3>
+          <p>Você pode personalizá-la do jeito que quiser, fidelizando ainda mais os seus clientes e fortalecendo a sua marca.</p>
         </aside>
         <figure>
           <img src="/images/products/three.png" alt="Maquininhas Tef" />
@@ -134,6 +156,10 @@ export const PRODUCTS = styled.section`
             color: ${appColors.text};
           }
 
+          :nth-child(3), :last-of-type{
+            margin: 16px 0 0;
+          }
+
         }
 
       } 
@@ -179,9 +205,12 @@ export const PRODUCTS = styled.section`
         }
       }
       
-      > aside > ul > li:last-of-type {
-        margin: 16px 0 0;
+      > aside > ul > li {
+        /* :nth-child(3), :last-of-type{
+          margin: 16px 0 0;
+        } */
       }
+      
 
     }
 

@@ -83,16 +83,27 @@ const App = ({ Component, pageProps }) => {
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet" />
-
-        {/* // TODO:  ADD OG TAGS Marlim
-        <meta property="og:title" content="Resoluções Antirracistas para 2021" />
-        <meta property="og:description" content="Não somos todos iguais e essa é a nossa maior força! As nossas diferenças, quem somos, como pensamos, o que vivenciamos são o que vão nos ajudar a tornar o mundo um lugar melhor, incluindo todos. Precisamos agir agora. Nesse clima de início de ano, não queremos que você se esqueça de incluir na sua lista de resoluções de ano novo alguns itens antirracistas." />
-        <meta property="og:image" content="https://antirracistas.99jobs.com/images/ogimg.png" />
+        <meta property="og:url" content="https://marlim.co" />
+        <meta property="og:site_name" content="Marlim.co | Taylor-Made Payments" />
+        <meta property="og:title" content="Marlim.co | Taylor-Made Payments" />
+        <meta property="og:description" content="Pagamentos sob medida para você. Aqui, sua empresa é que diz o que precisa. Nada de produtos de prateleiras." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" itemProp="image" content="https://marlim.co/images/ogimg.jpg" />
         <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="600" /> */}
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content="Pagamentos sob medida para você. Aqui, sua empresa é que diz o que precisa. Nada de produtos de prateleiras." />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX3142EY41"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-        {/* // TODO:  ADD GA Marlim */}
-
+              gtag('config', 'G-RX3142EY41');
+            `
+          }}
+        />
         <title>Marlim.co | Taylor-Made Payments</title>
       </Head>
       <GlobalStyle />
