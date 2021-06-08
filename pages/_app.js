@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
+import ReactGA from 'react-ga';
 import { createGlobalStyle } from "styled-components";
+import { isBrowser } from 'utils';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --transition-bg: background .25s ease-in-out;
     --transition-color: color .25s ease-in-out;
     --transition-border: border .25s ease-in-out;
+    --transition-opacity: opacity .25s ease-in-out;
   }
 
   html {
@@ -87,6 +91,16 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = ({ Component, pageProps }) => {
+
+  useEffect(() => {
+
+    if(!isBrowser) return;
+    
+    const trackingId = "UA-177572789-1"; // Replace with your Google Analytics tracking ID
+    ReactGA.initialize(trackingId);
+
+  }, [])
+
 
   return (
     <>
