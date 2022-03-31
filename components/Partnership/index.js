@@ -16,7 +16,7 @@ const Partnership = () => {
           <div className="flex">
             <Logo />
             <hr />
-            <img src="/images/partnership/logo-shepherd.png" alt="Logo Shepherd" />
+            <img src="/images/partnership/logo-shepherd2.png" alt="Logo Shepherd" />
           </div>
         </aside>
       </div>
@@ -74,7 +74,7 @@ export const PARTNERSHIP = styled.section`
           margin: 0 60px;
         }
         > img {
-          width: 127px;
+          width: 135px;
           height: auto;
         }
       }
