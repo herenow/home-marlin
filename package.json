@@ -2,7 +2,7 @@
   "name": "site-marlim",
   "version": "2.0.0",
   "engines": {
-    "node": "10"
+    "node": "16"
   },
   "scripts": {
     "start": "next start",

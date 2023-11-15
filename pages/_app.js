@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     --transition-color: color .25s ease-in-out;
     --transition-border: border .25s ease-in-out;
     --transition-opacity: opacity .25s ease-in-out;
+    --transition-animation: all 1s ease-in-out;
   }
 
   html {

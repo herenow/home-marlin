@@ -30,17 +30,18 @@ const Contact = () => {
         {/* <p>Estamos aguardando o seu contato para te ajudar a criar a solução ideal para você!</p> */}
         <p>Aguardamos o seu contato para trabalharmos conjuntamente na solução ideal para você!</p>
         <ul>
-          <li className="flex">
+          {/* <li className="flex">
             <Phone />
             <span>+55 11 98579-6477</span>
-          </li>
+          </li> */}
           <li className="flex">
             <Mail />
             <span>atendimento@marlim.co</span>
           </li>
           <li className="flex">
             <Location />
-            <span>Av. Eng. Luís Carlos Berrini, 1139 - Itaim, São Paulo - SP, 04571-010</span>
+            {/* <span>Av. Eng. Luís Carlos Berrini, 1139 - Itaim, São Paulo - SP, 04571-010</span> */}
+            <span>Alameda Vicente Pinzon, 54<br />Vila Olímpia, São Paulo - SP<br />04547-130</span>
           </li>
         </ul>
       </section>
@@ -73,7 +74,8 @@ const Contact = () => {
 
 export const CONTACT = styled.section`
 
-  padding: 0 0 136px;
+  /* padding: 0 0 136px; */
+  padding: 0;
   position: relative;
   align-items: flex-start;
 

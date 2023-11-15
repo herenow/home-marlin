@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 import Ilustra from './ilustra.svg';
+import Clients from './clients';
 import { appColors } from 'utils';
 
 const Hero = () => {
 
- return (
-   <HERO className="flex">
-     <div className="flex c mw">
+  return (
+    <HERO className="flex">
+      <div className="flex c mw">
         <strong>Nós somos a Marlim.co</strong>
         <h1>Pagamentos <span>sob medida</span> para você</h1>
         <p>Aqui, sua empresa é que diz o que precisa.<br />Nada de produtos de prateleiras.</p>
-        <a href="#contato" className="flex">Saiba Mais</a>
-     </div>
-     <Ilustra />
-   </HERO>
- )
+      </div>
+      <Clients />
+      <Ilustra />
+    </HERO>
+  )
 
 }
 

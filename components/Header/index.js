@@ -8,12 +8,12 @@ const Header = () => {
   return (
     <HEADER id="home" className="flex mw">
       <Logo />
-      <nav className="flex">
+      {/* <nav className="flex">
         <a title="Home" href="#home">Home</a>
         <a title="Clientes" href="#clientes">Clientes</a>
         <a title="Produtos" href="#produtos">Produtos</a>
         <a title="Contato" href="#contato">Contato</a>
-      </nav>
+      </nav> */}
       <nav className="flex">
         <a className="flex" target="_blank" href="http://api.marlim.co">API</a>
         {/* <a className="flex" href="#">Login</a> */}
@@ -38,7 +38,7 @@ export const HEADER = styled.header`
   
   > nav {
 
-    :first-of-type {
+    /* :first-of-type {
       
       flex: 1;
 
@@ -72,7 +72,7 @@ export const HEADER = styled.header`
         display: none;
       }
 
-    }
+    } */
     
     :last-of-type {
 
