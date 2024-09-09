@@ -9,7 +9,7 @@ const Hero = () => {
     <HERO className="flex">
       <div className="flex c mw">
         <strong>Nós somos a Marlim.co</strong>
-        <h1>Pagamentos <span>sob medida</span> para você</h1>
+        <h1>Pagamentos <span>estruturados</span></h1>
         <p>Aqui, sua empresa é que diz o que precisa.<br />Nada de produtos de prateleiras.</p>
       </div>
       <Clients />

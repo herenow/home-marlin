@@ -114,14 +114,14 @@ const App = ({ Component, pageProps }) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet" />
         <meta property="og:url" content="https://marlim.co" />
-        <meta property="og:site_name" content="Marlim.co | Taylor-Made Payments" />
-        <meta property="og:title" content="Marlim.co | Taylor-Made Payments" />
-        <meta property="og:description" content="Pagamentos sob medida para você. Aqui, sua empresa é que diz o que precisa. Nada de produtos de prateleiras." />
+        <meta property="og:site_name" content="Marlim.co" />
+        <meta property="og:title" content="Marlim.co" />
+        <meta property="og:description" content="Empresa de Tecnologia de Pagamentos Estruturados" />
         <meta property="og:type" content="website" />
         <meta property="og:image" itemProp="image" content="https://marlim.co/images/ogimg.jpg" />
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="600" />
-        <meta property="og:image:alt" content="Pagamentos sob medida para você. Aqui, sua empresa é que diz o que precisa. Nada de produtos de prateleiras." />
+        <meta property="og:image:alt" content="Empresa de Tecnologia de Pagamentos Estruturados" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX3142EY41"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -134,7 +134,7 @@ const App = ({ Component, pageProps }) => {
             `
           }}
         />
-        <title>Marlim.co | Taylor-Made Payments</title>
+        <title>Marlim.co</title>
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
