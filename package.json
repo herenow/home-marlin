@@ -9,9 +9,7 @@
     "dev": "next dev",
     "build": "rm -rf build && next build",
     "export": "yarn build && next export",
-    "deploy:v2": "yarn export && firebase deploy --only hosting:v2",
-    "deploy:production": "yarn export && firebase deploy --only hosting:production",
-    "deploy": "yarn deploy:production"
+    "deploy": "yarn export && firebase deploy --only hosting:production"
   },
   "dependencies": {
     "next": "^10.2.2",
