@@ -122,6 +122,7 @@ const App = ({ Component, pageProps }) => {
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="600" />
         <meta property="og:image:alt" content="Empresa de Tecnologia de Pagamentos Estruturados" />
+        <script src='https://platform.illow.io/banner.js?siteId=d85412e4-4c0f-4497-853c-f21deb5e43bc'></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX3142EY41"></script>
         <script
           dangerouslySetInnerHTML={{

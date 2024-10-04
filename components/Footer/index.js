@@ -16,9 +16,9 @@ const Footer = () => {
             <a title="Produtos" href="#produtos">Produtos</a>
             <a title="Contato" href="#contato">Contato</a> */}
             <a title="API" target="_blank" href="http://api.marlim.co">API</a>
-            <a title="Suporte" target="_blank" href="https://marlim.zendesk.com/hc/pt-br">Suporte</a>
-            <a title="Privacidade" href="https://docs.google.com/document/u/1/d/e/2PACX-1vSuDTWDBB6CFT2UGT1MyOHyFl_-f8Hx0uECAJstfvnCbccBEWHyHkRxQ-b7qf4De-wuTSM3C_2_L3do/pub" target="_blank">Privacidade</a>
-            <a title="Privacidade" href="https://docs.google.com/document/u/1/d/e/2PACX-1vS81EH7F1OuMEanBbxQ__sBQj4HFcODfr1sdqHBhC1SiyLBA-RTUoryXD0l0wjTNe0-Y-Vja4vq4ANG/pub" target="_blank">Termos</a>
+            <a title="Políticas de Privacidade" target="_blank" href="https://drive.google.com/file/d/1M0wzWKD40_8sjZeRjUyIPVSAtHis0TII/view?usp=sharing">Políticas de Privacidade</a>
+            <a title="Política de Cookies" href="https://drive.google.com/file/d/10Q9cLAlZjcGpt8yHPYq9bPqde6Lb5gtE/view?usp=sharing" target="_blank">Política de Cookies</a>
+            <a title="Canal de Atendimento ao Titular" href="https://share.teamforms.app/form/ODZjM2Y5MDktYmQ2My00YjRlLWJiYTUtMmMxZjg4Yzk1OGQwOjFhZmQzMzE3LTA5MzQtNGMyYS1iYTVkLTFiYTZhODY5YWE2NDo4NzFiMmMzYy1jNTZkLTQwYzYtODc0My1lYmYzNzgzNDkyNTM=" target="_blank">Canal de Atendimento ao Titular</a>
           </nav>
         </div>
         <div className='flex'>
