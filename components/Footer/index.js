@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="flex mw">
         <div>
           <Logo />
-          <nav className="flex">
+          <nav className="flex text-center">
             {/* <a title="Home" href="#home">Home</a>
             <a title="Clientes" href="#clientes">Clientes</a>
             <a title="Produtos" href="#produtos">Produtos</a>
-            <a title="Contato" href="#contato">Contato</a> */}
-            <a title="API" target="_blank" href="http://api.marlim.co">API</a>
-            <a title="Políticas de Privacidade" target="_blank" href="https://drive.google.com/file/d/1M0wzWKD40_8sjZeRjUyIPVSAtHis0TII/view?usp=sharing">Políticas de Privacidade</a>
+            <a title="Contato" href="#contato">Contato</a> 
+            <a title="API" target="_blank" href="http://api.marlim.co">API</a> */}
+            <a title="Política de Privacidade" target="_blank" href="https://drive.google.com/file/d/1M0wzWKD40_8sjZeRjUyIPVSAtHis0TII/view?usp=sharing">Política de Privacidade</a>
             <a title="Política de Cookies" href="https://drive.google.com/file/d/10Q9cLAlZjcGpt8yHPYq9bPqde6Lb5gtE/view?usp=sharing" target="_blank">Política de Cookies</a>
             <a title="Canal de Atendimento ao Titular" href="https://share.teamforms.app/form/ODZjM2Y5MDktYmQ2My00YjRlLWJiYTUtMmMxZjg4Yzk1OGQwOjFhZmQzMzE3LTA5MzQtNGMyYS1iYTVkLTFiYTZhODY5YWE2NDo4NzFiMmMzYy1jNTZkLTQwYzYtODc0My1lYmYzNzgzNDkyNTM=" target="_blank">Canal de Atendimento ao Titular</a>
           </nav>
@@ -56,15 +56,16 @@ export const FOOTER = styled.footer`
         align-items: center;
         > svg {
           width: 109px;
-          margin: 0 60px 0 0;
+          margin: 0 30px 0 0;
         }
         > nav {
           flex: 1;
           > a {
     
             font-size: 1.6rem;
+            text-align: center;
             color: ${appColors.text};
-            margin: 0 30px 0 0;
+            margin: 0 15px 0 0;
             position: relative;
             
             :last-of-type {
@@ -168,7 +169,7 @@ export const FOOTER = styled.footer`
       }
       nav {
         display: grid;
-        grid-template-columns: repeat(2, 120px);
+        grid-template-columns: repeat(3, 120px);
         align-items: center;
         justify-content: center;
         gap: 10px 0;
