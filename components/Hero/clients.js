@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
 const
-  clientsData = Array.from({ length: 9 }, (_, i) => i).map((i) => i + 1),
+  clientsData = Array.from({ length: 11 }, (_, i) => i).map((i) => i + 1),
   resetImg = (imgToReset) => setTimeout(() => imgToReset.classList.add('reset'), 1000),
   replaceImg = (imgToReplaceSrc, imgToReplace) => imgToReplaceSrc.src = `/images/clients/new_logos/${imgToReplace}.png`,
   updateClasses = (imgToHide, imgToShow) => {
