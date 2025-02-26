@@ -63,7 +63,8 @@ const Testimonials = () => {
 
 export const TESTIMONIALS = styled.section`
 
-  padding: calc(552px + 136px) 0 calc(136px + 140px);
+  /* padding: calc(552px + 136px) 0 calc(136px + 140px); */
+  padding: 0 0 calc(136px + 140px);
   text-align: center;
   position: relative;
 
@@ -184,7 +185,8 @@ export const TESTIMONIALS = styled.section`
   }
 
   @media (max-width: 576px) {
-    padding: calc(552px + 100px) 0 100px;
+    /* padding: calc(552px + 100px) 0 100px; */
+    padding: 0 0 calc(136px + 140px);
     > h5 {
       margin: 8px auto 100px;
     }

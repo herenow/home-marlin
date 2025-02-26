@@ -91,7 +91,8 @@ const Products = () => {
 
 export const PRODUCTS = styled.section`
   
-  margin: 0 0 136px; 
+  /* margin: 0 0 136px;  */
+  margin: calc(100vh + 136px) 0 90px; 
 
   > h2 {
     margin: 0 0 136px; 
@@ -275,7 +276,8 @@ export const PRODUCTS = styled.section`
   }
 
   @media (max-width: 576px) {
-    margin: 100px 0 0;
+    /* margin: 100px 0 0; */
+    margin: calc(100vh) 0 0; 
     overflow: hidden;
     > h2 {
       margin: 0 0 100px;
